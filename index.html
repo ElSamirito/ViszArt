@@ -5,45 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/index-style.css">
-    <title>ViszArt - La personalización del Arte</title>
+    <title>ViszArt - Arte a tu Estilo</title>
 </head>
 <body>
     <header>
-        <a href="/index.html">
-            <img src="/IMG/Logo VA.png">
-        </a>
+        <img src="/IMG/Logo VA.png">
         <h1>ViszArt</h1>
         <ul>
             <a href="#info">Información</a>
             <a href="#gal">Galería</a>
             <a href="#cont">Contacto</a>
+            <a href="#team">Nuestro Equipo</a>
             <a href="#ped">Hacé tu Pedido</a>
         </ul>
     </header>
     
-    <div id="info">
+    <div class="seccion" id="info">
         <h2>Información</h2>
-        <p>ViszArt es una iniciativa...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus maxime dolor delectus in atque nemo, rerum possimus eius tempora obcaecati facere culpa aut odit totam! Blanditiis nisi perspiciatis sint odio!</p>
+        <p>ViszArt es una iniciativa individual de índole artístico-económica para aquellas personas interesadas en reanimar sus vidas con un toque personal, ya sea con cuadros a pedido o la posibilidad de revitalizar prendas para darle un estilo propio. El único empleado, propietario y fundador de esta microempresa es Samir Arab, en el que tiene varios roles a cumplir.</p>
     </div>
 
-    <div id="gal">
+    <div class="seccion" id="gal">
         <h2>Galería</h2>
-        <p>bla bla bla</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam delectus quae aliquam ullam recusandae ipsa? Pariatur ad, impedit hic, quis facere, voluptate eaque dolorum quos dicta eveniet cum ipsam vitae?</p>
+        <p>bla bla bla Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam delectus quae aliquam ullam recusandae ipsa? Pariatur ad, impedit hic, quis facere, voluptate eaque dolorum quos dicta eveniet cum ipsam vitae?</p>
     </div>
 
-    <div id="cont">
+    <div class="seccion" id="cont">
         <h2>Contacto</h2>
-        <p>bla bla bla</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iste hic ad vero adipisci! Veniam aliquid consequuntur, obcaecati at, animi necessitatibus vitae, ipsa cupiditate magnam quia itaque expedita totam iure!</p>
+        <p>bla bla bla Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iste hic ad vero adipisci! Veniam aliquid consequuntur, obcaecati at, animi necessitatibus vitae, ipsa cupiditate magnam quia itaque expedita totam iure!</p>
     </div>
     
-    <div id="ped">
+    <div class="seccion" id="team">
+        <h2>Nuestro Equipo</h2>
+        <ul>
+            <div class="staff">
+                <img src="/IMG/personita.png" alt="">
+                <p class="nombre">Samir D. Arab</p>
+                <p>CEO y Fundador</p>
+            </div>
+            <div class="staff">
+                <img src="/IMG/personita.png" alt="">
+                <p class="nombre">Samir D. Arab</p>
+                <p>Diseñador Gráfico</p>
+            </div>
+            <div class="staff">
+                <img src="/IMG/personita.png" alt="">
+                <p class="nombre">Samir D. Arab</p>
+                <p>Artista Plástico</p>
+            </div>
+            <div class="staff">
+                <img src="/IMG/personita.png" alt="">
+                <p class="nombre">Samir D. Arab</p>
+                <p>Asesor Comercial</p>
+            </div>
+            <div class="staff">
+                <img src="/IMG/personita.png" alt="">
+                <p class="nombre">Samir D. Arab</p>
+                <p>Especialista en Marketing</p>
+            </div>
+            <div class="staff">
+                <img src="/IMG/personita.png" alt="">
+                <p class="nombre">Samir D. Arab</p>
+                <p>Director Financiero</p>
+            </div>
+        </ul>
+    </div>
+
+    <div class="seccion" id="ped">
         <h2>Hacé tu Pedido</h2>
-        <p>bla bla bla</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique rerum officia laborum debitis illo animi totam nostrum quibusdam deleniti, voluptas quidem nihil! Repellat ullam inventore quidem, sint reprehenderit rerum?</p>
+        <form action="">
+            <li>
+                <i class="pasos">Paso 1:</i> Ingrese su email para una eventual respuesta
+                <br>
+                <input type="email" name="mail" id="">
+            </li>
+            <li>
+                <i class="pasos">Paso 2:</i> Elija el formato del pedido
+                <br>
+                <input type="radio" name="format" id="cuadro" value="Cuadro">
+                <label for="format">Cuadro</label><br>
+                <input type="radio" name="format" id="prenda" value="Prenda">
+                <label for="format">Prenda</label>
+            </li>
+            <li>
+                <i class="pasos">Paso 3:</i> Adjunte el/los archivos correspondientes al diseño
+                <input type="file" name="diseño" id="diseño">
+            </li>
+            <li>
+                <i class="pasos">Paso 4:</i> El archivo adjunto
+                <br>
+                <input type="radio" name="fondo" id="incluye" value="incluye" oninput="ocultar('colorFondo')">
+                <label for="fondo">Incluye o No Requiere Fondo</label><br>
+                <input type="radio" name="fondo" id="requiere" value="requiere" oninput="mostrar('colorFondo')">
+                <label for="fondo">Requiere un Fondo</label>
+                <div id="colorFondo">
+                    En ese caso, será pintado liso, así que seleccione un color
+                    <input type="color" name="colorFondo">
+                </div>
+                
+            </li>
+            <li>
+                <i class="pasos">Paso 5:</i> Si tuviese que definir una dificultad del proyecto, sería:
+                <br>
+                Muy Fácil<input type="range" name="dificultad" id="">Muy Difícil
+            </li>
+            <li>
+                <i class="pasos">Paso Final:</i> Envíe el formulario para terminar su solicitud
+                <br>
+                <input type="submit" value="Enviar Solicitud">
+            </li>
+        </form>
     </div>
-    
+    <script src="/JS/script.js"></script>
 </body>
 </html>
