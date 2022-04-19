@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/index-style.css">
+    <link rel="icon" href="./IMG/Logo VA.png">
     <title>ViszArt - Arte a tu Estilo</title>
 </head>
 <body>
@@ -12,31 +13,30 @@
         <img src="./IMG/Logo VA.png">
         <h1>ViszArt</h1>
         <ul>
-            <a href="#info">Información</a>
-            <a href="#gal">Galería</a>
-            <a href="#cont">Contacto</a>
-            <a href="#team">Nuestro Equipo</a>
-            <a href="#ped">Hacé tu Pedido</a>
+            <a href="#info">Sobre Nosotros</a>
+            <a href="#gal">Galería de Proyectos</a>
+            <a href="#team">El Equipo ViszArt</a>
+            <a href="#ped">Hacé tu Pedido</a>            
+            <a href="#cont">Maneras de Contactarnos</a>
+
         </ul>
     </header>
     
     <div class="seccion" id="info">
-        <h2>Información</h2>
-        <p>ViszArt es una iniciativa individual de índole artístico-económica para aquellas personas interesadas en reanimar sus vidas con un toque personal, ya sea con cuadros a pedido o la posibilidad de revitalizar prendas para darle un estilo propio. El único empleado, propietario y fundador de esta microempresa es Samir Arab, en el que tiene varios roles a cumplir.</p>
+        <h2>Sobre Nosotros</h2>
+        <p>
+            ViszArt es una iniciativa individual de índole artístico-económica para aquellas personas interesadas en reanimar sus vidas de manera artística y con un toque personal, ya sea por medio de cuadros a pedido o con la posibilidad de revitalizar otros objetos para darle un estilo propio.
+            ViszArt es una empresa con más de 10 días de experiencia en el rubro, lo cual garantiza una calidad de primer nivel y una experiencia totalmente adaptada a cada cliente, todo gracias a nuestro gran equipo de profesionales.
+        </p>
     </div>
 
     <div class="seccion" id="gal">
-        <h2>Galería</h2>
+        <h2>Galería de Proyectos</h2>
         <p>bla bla bla Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam delectus quae aliquam ullam recusandae ipsa? Pariatur ad, impedit hic, quis facere, voluptate eaque dolorum quos dicta eveniet cum ipsam vitae?</p>
-    </div>
-
-    <div class="seccion" id="cont">
-        <h2>Contacto</h2>
-        <p>bla bla bla Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iste hic ad vero adipisci! Veniam aliquid consequuntur, obcaecati at, animi necessitatibus vitae, ipsa cupiditate magnam quia itaque expedita totam iure!</p>
     </div>
     
     <div class="seccion" id="team">
-        <h2>Nuestro Equipo</h2>
+        <h2>El Equipo ViszArt</h2>
         <ul>
             <div class="staff">
                 <img src="./IMG/personita.png" alt="">
@@ -64,7 +64,7 @@
                 <p>Especialista en Marketing</p>
             </div>
             <div class="staff">
-                <img src="/IMG/personita.png" alt="">
+                <img src="./IMG/personita.png" alt="">
                 <p class="nombre">Samir D. Arab</p>
                 <p>Director Financiero</p>
             </div>
@@ -79,18 +79,27 @@
                 <br>
                 <input type="email" name="mail" id="">
             </li>
+
             <li>
                 <i class="pasos">Paso 2:</i> Elija el formato del pedido
                 <br>
-                <input type="radio" name="format" id="cuadro" value="Cuadro">
+                <input type="radio" name="format" id="cuadro" value="Cuadro" oninput="ocultar('espForm')">
                 <label for="format">Cuadro</label><br>
-                <input type="radio" name="format" id="prenda" value="Prenda">
-                <label for="format">Prenda</label>
+                <input type="radio" name="format" id="prenda" value="Prenda" oninput="ocultar('espForm')">
+                <label for="format">Prenda</label><br>
+                <input type="radio" name="format" id="otro" value="Otro" oninput="mostrar('espForm')">
+                <label for="format">Otro</label>
+                <div id="espForm">
+                    De ser así, especifique
+                    <input type="text" name="nuevoForm">
+                </div>
             </li>
+
             <li>
                 <i class="pasos">Paso 3:</i> Adjunte el/los archivos correspondientes al diseño
                 <input type="file" name="diseño" id="diseño">
             </li>
+
             <li>
                 <i class="pasos">Paso 4:</i> El archivo adjunto
                 <br>
@@ -104,17 +113,33 @@
                 </div>
                 
             </li>
+
             <li>
                 <i class="pasos">Paso 5:</i> Si tuviese que definir una dificultad del proyecto, sería:
                 <br>
                 Muy Fácil<input type="range" name="dificultad" id="">Muy Difícil
             </li>
+            
             <li>
                 <i class="pasos">Paso Final:</i> Envíe el formulario para terminar su solicitud
                 <br>
                 <input type="submit" value="Enviar Solicitud">
             </li>
         </form>
+
+        
+
+    </div>
+    
+    <div class="seccion" id="cont">
+        <h2>Maneras de Contactarnos</h2>
+        <ul>
+            <li>arabsamir2003@gmail.com</li>
+            <li>3564-581513</li>
+            <li>samirito.arab</li>
+            <li>Samir Arab</li>
+            <li>Italia 2966, San Fco, Córdoba</li>
+        </ul>
     </div>
     <script src="./JS/script.js"></script>
 </body>
