@@ -4,6 +4,9 @@ body{
 header img{
     width: 80px;
 }
+header{
+    display: ruby;
+}
 header ul a{
     text-decoration: none;
     font-weight: bold;
