@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/index-style.css">
     <link rel="icon" href="./IMG/Logo VA.png">
+    <link rel="stylesheet" href="./FA/css/all.css">
     <title>ViszArt - Arte a tu Estilo</title>
 </head>
 <body>
@@ -18,7 +19,6 @@
             <a href="#team">El Equipo ViszArt</a>
             <a href="#ped">Hacé tu Pedido</a>            
             <a href="#cont">Maneras de Contactarnos</a>
-
         </ul>
     </header>
     
@@ -41,32 +41,47 @@
             <div class="staff">
                 <img src="./IMG/personita.png" alt="">
                 <p class="nombre">Samir D. Arab</p>
-                <p>CEO y Fundador</p>
+                <p>Director Ejecutivo y Fundador</p>
             </div>
             <div class="staff">
                 <img src="./IMG/personita.png" alt="">
                 <p class="nombre">Samir D. Arab</p>
-                <p>Diseñador Gráfico</p>
-            </div>
-            <div class="staff">
-                <img src="./IMG/personita.png" alt="">
-                <p class="nombre">Samir D. Arab</p>
-                <p>Artista Plástico</p>
-            </div>
-            <div class="staff">
-                <img src="./IMG/personita.png" alt="">
-                <p class="nombre">Samir D. Arab</p>
-                <p>Asesor Comercial</p>
-            </div>
-            <div class="staff">
-                <img src="./IMG/personita.png" alt="">
-                <p class="nombre">Samir D. Arab</p>
-                <p>Especialista en Marketing</p>
+                <p>Director de Operaciones</p>
             </div>
             <div class="staff">
                 <img src="./IMG/personita.png" alt="">
                 <p class="nombre">Samir D. Arab</p>
                 <p>Director Financiero</p>
+            </div>
+            <div class="staff">
+                <img src="./IMG/personita.png" alt="">
+                <p class="nombre">Samir D. Arab</p>
+                <p>Director de RR HH</p>
+            </div>
+            <div class="staff">
+                <img src="./IMG/personita.png" alt="">
+                <p class="nombre">Samir D. Arab</p>
+                <p>Director de Marketing</p>
+            </div>
+            <div class="staff">
+                <img src="./IMG/personita.png" alt="">
+                <p class="nombre">Samir D. Arab</p>
+                <p>Director de RR EE</p>
+            </div>
+            <div class="staff">
+                <img src="./IMG/personita.png" alt="">
+                <p class="nombre">Samir D. Arab</p>
+                <p>Diseñador Gráfico en Jefe</p>
+            </div>
+            <div class="staff">
+                <img src="./IMG/personita.png" alt="">
+                <p class="nombre">Samir D. Arab</p>
+                <p>Artista Plástico en Jefe</p>
+            </div>
+            <div class="staff">
+                <img src="./IMG/personita.png" alt="">
+                <p class="nombre">Samir D. Arab</p>
+                <p>Asesor Comercial en Jefe</p>
             </div>
         </ul>
     </div>
@@ -91,12 +106,13 @@
                 <label for="format">Otro</label>
                 <div id="espForm">
                     De ser así, especifique
-                    <input type="text" name="nuevoForm">
+                    <input type="text" name="nuevoForm" class="noMargin">
                 </div>
             </li>
 
             <li>
                 <i class="pasos">Paso 3:</i> Adjunte el/los archivos correspondientes al diseño
+                <br>
                 <input type="file" name="diseño" id="diseño">
             </li>
 
@@ -109,7 +125,7 @@
                 <label for="fondo">Requiere un Fondo</label>
                 <div id="colorFondo">
                     En ese caso, será pintado liso, así que seleccione un color
-                    <input type="color" name="colorFondo">
+                    <input type="color" name="colorFondo" class="noMargin">
                 </div>
                 
             </li>
@@ -117,9 +133,9 @@
             <li>
                 <i class="pasos">Paso 5:</i> Si tuviese que definir una dificultad del proyecto, sería:
                 <br>
-                Muy Fácil<input type="range" name="dificultad" id="">Muy Difícil
+                <div id="dificultad">Muy Fácil<input type="range" name="dificultad" class="noMargin">Muy Difícil</div>
             </li>
-            
+
             <li>
                 <i class="pasos">Paso Final:</i> Envíe el formulario para terminar su solicitud
                 <br>
@@ -134,11 +150,35 @@
     <div class="seccion" id="cont">
         <h2>Maneras de Contactarnos</h2>
         <ul>
-            <li>arabsamir2003@gmail.com</li>
-            <li>3564-581513</li>
-            <li>samirito.arab</li>
-            <li>Samir Arab</li>
-            <li>Italia 2966, San Fco, Córdoba</li>
+            <li>
+                <i class="fa-regular fa-envelope"></i>
+                <a class="contWay" target="_blank" href="mailto:arabsamir2003@gmail.com">arabsamir2003@gmail.com</a>
+            </li>
+            
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                <a class="contWay" target="_blank" href="tel:+543564581513">3564-581513</a>
+            </li>
+            
+            <li>
+                <i class="fa-brands fa-whatsapp"></i>
+                <a class="contWay" target="_blank" href="https://wa.me/5493564581513">+54 9 3564-581513</a>
+            </li>
+            
+            <li>
+                <i class="fa-brands fa-instagram"></i>
+                <a class="contWay" target="_blank" href="https://www.instagram.com/samirito.arab/">samirito.arab</a>
+            </li>
+            
+            <li>
+                <i class="fa-brands fa-facebook-f"></i>
+                <a class="contWay" target="_blank" href="https://www.facebook.com/samir.arab.1656/">Samir Arab</a>
+            </li>
+            
+            <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <a class="contWay" target="_blank" href="https://www.google.com/maps/place/San+Francisco,+Cordoba/@-31.4231819,-62.1282483,13z/">San Francisco, Córdoba</a>
+            </li>
         </ul>
     </div>
     <script src="./JS/script.js"></script>
