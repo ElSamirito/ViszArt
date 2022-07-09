@@ -17,7 +17,7 @@
         <div id="divH1">
             <h1 id="VZ">ViszArt</h1>
         </div>
-        <ul id="headerUl">
+        <ul id="headerUl" >
             <a class="headerItem" href="#info">Sobre Nosotros</a>
             <a class="headerItem" href="#gal">Galería de Proyectos</a>
             <a class="headerItem" href="#team">El Equipo ViszArt</a>
@@ -35,8 +35,91 @@
     </div>
 
     <div class="seccion" id="gal">
+        
         <h2>Galería de Proyectos</h2>
-        <p>bla bla bla Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam delectus quae aliquam ullam recusandae ipsa? Pariatur ad, impedit hic, quis facere, voluptate eaque dolorum quos dicta eveniet cum ipsam vitae?</p>
+        <p>Algunos de nuestros trabajos más recientes, para que te hagas una idea de con qué te podés encontrar y del nivel que manejamos.</p>
+        
+        <div id="acordeon">
+            <div class="proj">
+                <button class="proj-btn">Proyecto N°X <i class="fa-solid fa-caret-down"></i></button>
+                <div class="projProcess">
+                    <div class="projStage">
+                        <img src="./IMG/Logo VA.png" style="width: 120px;">
+                        <h4>Etapa X</h4>
+                    </div>
+                    
+                    <div class="projStage">
+                        <img src="./IMG/Logo VA.png" style="width: 120px;">
+                        <h4>Etapa X</h4>
+                    </div>
+                    
+                    <div class="projStage">
+                        <img src="./IMG/Logo VA.png" style="width: 120px;">
+                        <h4>Etapa X</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj">
+                <button class="proj-btn">Proyecto N°X <i class="fa-solid fa-caret-down"></i></button>
+                <div class="projProcess">
+                    <div class="projStage">
+                        <img src="./IMG/Logo VA.png" style="width: 120px;">
+                        <h4>Etapa X</h4>
+                    </div>
+                    
+                    <div class="projStage">
+                        <img src="./IMG/Logo VA.png" style="width: 120px;">
+                        <h4>Etapa X</h4>
+                    </div>
+                    
+                    <div class="projStage">
+                        <img src="./IMG/Logo VA.png" style="width: 120px;">
+                        <h4>Etapa X</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj">
+                <button class="proj-btn">Proyecto N°X <i class="fa-solid fa-caret-down"></i></button>
+                <div class="projProcess">
+                    <div class="projStage">
+                        <img src="./IMG/Logo VA.png" style="width: 120px;">
+                        <h4>Etapa X</h4>
+                    </div>
+                    
+                    <div class="projStage">
+                        <img src="./IMG/Logo VA.png" style="width: 120px;">
+                        <h4>Etapa X</h4>
+                    </div>
+                    
+                    <div class="projStage">
+                        <img src="./IMG/Logo VA.png" style="width: 120px;">
+                        <h4>Etapa X</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj">
+                <button class="proj-btn">Proyecto N°X <i class="fa-solid fa-caret-down"></i></button>
+                <div class="projProcess">
+                    <div class="projStage">
+                        <img src="./IMG/Logo VA.png" style="width: 120px;">
+                        <h4>Etapa X</h4>
+                    </div>
+                    
+                    <div class="projStage">
+                        <img src="./IMG/Logo VA.png" style="width: 120px;">
+                        <h4>Etapa X</h4>
+                    </div>
+                    
+                    <div class="projStage">
+                        <img src="./IMG/Logo VA.png" style="width: 120px;">
+                        <h4>Etapa X</h4>
+                    </div>
+                </div>
+            </div>            
+        </div>
     </div>
     
     <div class="seccion" id="team">
@@ -106,7 +189,7 @@
                 <label for="format">Cuadro</label><br>
                 <input type="radio" name="format" id="prenda" value="Prenda" oninput="ocultar('espForm')">
                 <label for="format">Prenda</label><br>
-                <input type="radio" name="format" id="otro" value="Otro" oninput="mostrar('espForm')">
+                <input type="radio" name="format" id="otro" value="Otro" oninput="mostrar('espForm', 'block')">
                 <label for="format">Otro</label>
                 <div id="espForm">
                     De ser así, especifique
@@ -125,7 +208,7 @@
                 <br>
                 <input type="radio" name="fondo" id="incluye" value="incluye" oninput="ocultar('colorFondo')">
                 <label for="fondo">Incluye o No Requiere Fondo</label><br>
-                <input type="radio" name="fondo" id="requiere" value="requiere" oninput="mostrar('colorFondo')">
+                <input type="radio" name="fondo" id="requiere" value="requiere" oninput="mostrar('colorFondo', 'block')">
                 <label for="fondo">Requiere un Fondo</label>
                 <div id="colorFondo">
                     En ese caso, será pintado liso, así que seleccione un color

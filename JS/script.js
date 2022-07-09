@@ -1,22 +1,16 @@
-function mostrar(dni){
+function mostrar(dni, manera){
     incol = document.getElementById(dni);
     
-    incol.style.display = "block";
-};
-
-function ocultar(dni){
-    incol = document.getElementById(dni);
-    
-    incol.style.display = "none";
+    incol.style.display = manera;
 };
 
 window.onscroll = function(){scrollear()};
 
 function scrollear(){
-    title = document.getElementById("VZ");
-    logo = document.getElementById("logoVZ");
-    he = document.getElementsByTagName("header");
-    hea = document.getElementsByClassName("headerItem");
+    const title = document.getElementById("VZ");
+    const logo = document.getElementById("logoVZ");
+    const he = document.getElementsByTagName("header");
+    const hea = document.getElementsByClassName("headerItem");
 
     if (document.documentElement.scrollTop > 50) {
 
@@ -41,13 +35,26 @@ function scrollear(){
     };
 };
 
-/*
-window.addEventListener("resize", responsivo());
+var acc = document.getElementsByClassName("proj-btn");
+var i;
 
-function responsivo() {
-    if (window.outerWidth <= 1280) {
-        ocultar("headerUl")
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    
+    this.classList.toggle("activo");
+
+    var projProcess = this.nextElementSibling;
+    
+    if (projProcess.style.display === "flex") {
+        projProcess.style.display = "none";
+    } else {
+        projProcess.style.display = "flex";
     }
+    
+    if (projProcess.style.maxHeight) {
+        projProcess.style.maxHeight = null;
+    } else {
+        projProcess.style.maxHeight = projProcess.scrollHeight + "px";
+    }
+  });
 }
-*/
-//por debajo de 1280 de ancho
